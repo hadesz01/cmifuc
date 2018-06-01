@@ -32,12 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cboTenLop = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDSGV = new System.Windows.Forms.DataGridView();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +62,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvDSGV);
             this.groupBox1.Location = new System.Drawing.Point(12, 134);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(640, 360);
@@ -70,14 +70,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
             // 
-            // dataGridView1
+            // dgvDSGV
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(628, 305);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDSGV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dgvDSGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSGV.Location = new System.Drawing.Point(6, 49);
+            this.dgvDSGV.Name = "dgvDSGV";
+            this.dgvDSGV.Size = new System.Drawing.Size(628, 305);
+            this.dgvDSGV.TabIndex = 0;
             // 
             // btnOk
             // 
@@ -85,13 +85,14 @@
             this.btnOk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
             this.btnOk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOk.Location = new System.Drawing.Point(407, 84);
+            this.btnOk.Location = new System.Drawing.Point(381, 84);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(59, 37);
+            this.btnOk.Size = new System.Drawing.Size(85, 37);
             this.btnOk.TabIndex = 3;
-            this.btnOk.Text = "OK";
+            this.btnOk.Text = "Hiển Thị";
             this.btnOk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnIn
             // 
@@ -134,7 +135,7 @@
             this.Text = "Danh Sách Giáo Viên ";
             this.Load += new System.EventHandler(this.DanhSachGiaoVien_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +149,6 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDSGV;
     }
 }

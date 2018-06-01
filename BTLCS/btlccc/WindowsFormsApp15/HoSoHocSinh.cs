@@ -47,6 +47,13 @@ namespace WindowsFormsApp15
             cboGioiTinh.DataSource = dta;
             cboGioiTinh.DisplayMember = "ten";
             cboGioiTinh.ValueMember = "gioitinh";
+
+            //Mã tự sinh
+            DataTable ma = cls.SinhMaHS();
+            string x = ma.Rows[0][0].ToString();
+            string mahs = "000" + x;
+            mahs = mahs.Substring(mahs.Length - 4, 4);
+            txtMaHS.Text = "HS" + mahs;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -95,6 +102,12 @@ namespace WindowsFormsApp15
         private void btnReload_Click(object sender, EventArgs e)
         {
             frmHoSoHocSinh_Load(sender, e);
+            txtHoTen.Clear();
+            txtNgaySinh.Clear();
+            txtDiaChi.Clear();
+            txtDiemVaoTruong.Clear();
+            txtHoTenBoMe.Clear();
+            txtSDT.Clear();
         }
 
         private void btnXem_Click(object sender, EventArgs e)

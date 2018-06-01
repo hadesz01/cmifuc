@@ -35,6 +35,15 @@ namespace WindowsFormsApp15
             cboLoaiTK.DisplayMember = "ten";
             cboLoaiTK.ValueMember = "loai";
             dgvCBGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            //Mã Tự Sinh
+
+            DataTable ma = cls.SinhMaCBGV();
+            string x = ma.Rows[0][0].ToString();
+            string macb = "000" + x;
+            macb = macb.Substring(macb.Length - 4, 4);
+            txtMaCBGV.Text ="GV" + macb;
+            
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -87,6 +96,11 @@ namespace WindowsFormsApp15
         private void btnReload_Click(object sender, EventArgs e)
         {
             frmQLDMGiaoVien_Load(sender, e);
+            txtHoTen.Clear();
+            txtDiaChi.Clear();
+            txtMatKhau.Clear();
+            txtSDT.Clear();
+            txtTaiKhoan.Clear();
         }
 
 

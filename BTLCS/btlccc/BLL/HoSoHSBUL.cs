@@ -36,5 +36,9 @@ namespace BLL
         {
             return cls.Xem(x);
         }
+        public DataTable SinhMaHS()
+        {
+            return cls.SinhMaHS();
+        }
     }
 }

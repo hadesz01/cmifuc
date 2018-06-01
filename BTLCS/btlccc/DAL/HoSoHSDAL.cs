@@ -93,5 +93,9 @@ namespace DAL
             dt.Load(dr);
             return dt;
         }
+        public DataTable SinhMaHS()
+        {
+            return cls.LoadData("SELECT TOP(1) CAST(RIGHT(MaHocSinh, 4) + 1 AS integer) AS SV FROM HoSoHocSinh ORDER BY MaHocSinh DESC");
+        }
     }
 }

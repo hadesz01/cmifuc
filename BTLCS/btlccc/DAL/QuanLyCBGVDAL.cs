@@ -100,5 +100,9 @@ namespace DAL
             dt.Load(dr);
             return dt;
         }
+        public DataTable SinhMaCBGV()
+        {
+            return LoadData("SELECT TOP(1) CAST(RIGHT(MaCanBoGiaoVien, 4) + 1 AS integer) AS SV FROM CanBoGiaoVien ORDER BY MaCanBoGiaoVien DESC");
+        }
     }
 }

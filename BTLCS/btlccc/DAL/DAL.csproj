@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="canBo.cs" />
+    <Compile Include="DanhSachGVDAL.cs" />
     <Compile Include="HoSoHSDAL.cs" />
     <Compile Include="KetNoi.cs" />
     <Compile Include="PCGDDADAL.cs" />

@@ -31,5 +31,9 @@ namespace BLL
         {
             return cls.Xoa(x);
         }
+        public DataTable SinhMaCBGV()
+        {
+            return cls.SinhMaCBGV();
+        }
     }
 }
