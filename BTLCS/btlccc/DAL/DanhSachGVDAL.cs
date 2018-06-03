@@ -15,7 +15,7 @@ namespace DAL
         public DataTable HienThiDS(PhanCongGiangDay x)
         {
             Open();
-            string sql = "select HoTen,DiaChi,SoDienThoai from CanBoGiaoVien inner join PhanCongGiangDay on CanBoGiaoVien.MaCanBoGiaoVien=PhanCongGiangDay.MaCanBoGiaoVien where MaLop=@ma";
+            string sql = "select CanBoGiaoVien.MaCanBoGiaoVien,HoTen,DiaChi,SoDienThoai from CanBoGiaoVien inner join PhanCongGiangDay on CanBoGiaoVien.MaCanBoGiaoVien=PhanCongGiangDay.MaCanBoGiaoVien where MaLop=@ma";
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("ma", x.MaLop);
             DataTable dt = new DataTable();

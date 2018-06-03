@@ -53,3 +53,16 @@ C:\Users\admin\Documents\git\baiTAPlon\BTLCS\btlccc\DAL\bin\Debug\DTO.pdb
 C:\Users\admin\Documents\git\baiTAPlon\BTLCS\btlccc\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\git\baiTAPlon\BTLCS\btlccc\DAL\obj\Debug\DAL.dll
 C:\Users\admin\Documents\git\baiTAPlon\BTLCS\btlccc\DAL\obj\Debug\DAL.pdb
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\DAL.dll
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\DAL.pdb
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\DTO.dll
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\mscorlib.dll
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\DTO.pdb
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\normidna.nlp
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\normnfc.nlp
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\normnfd.nlp
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\normnfkc.nlp
+D:\Git\cmifuc\BTLCS\btlccc\DAL\bin\Debug\normnfkd.nlp
+D:\Git\cmifuc\BTLCS\btlccc\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Git\cmifuc\BTLCS\btlccc\DAL\obj\Debug\DAL.dll
+D:\Git\cmifuc\BTLCS\btlccc\DAL\obj\Debug\DAL.pdb
