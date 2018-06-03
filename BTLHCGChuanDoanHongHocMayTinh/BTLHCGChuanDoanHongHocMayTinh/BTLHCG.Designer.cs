@@ -42,20 +42,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoiChinh = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblLoi = new System.Windows.Forms.Label();
-            this.lblLoiCuThe = new System.Windows.Forms.Label();
-            this.cboLoiNguon = new System.Windows.Forms.ComboBox();
-            this.lblLoiNguon = new System.Windows.Forms.Label();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.cboNutDieuKhien = new System.Windows.Forms.ComboBox();
             this.btnKtra = new System.Windows.Forms.Button();
             this.lblLoiChiTiet = new System.Windows.Forms.Label();
-            this.cboNutDieuKhien = new System.Windows.Forms.ComboBox();
+            this.lblLoiNguon = new System.Windows.Forms.Label();
+            this.cboLoiNguon = new System.Windows.Forms.ComboBox();
+            this.lblLoiCuThe = new System.Windows.Forms.Label();
+            this.lblLoi = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblKetQua = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,6 +63,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.groupBox1.Controls.Add(this.cboBipBios);
             this.groupBox1.Controls.Add(this.cboHDH);
             this.groupBox1.Controls.Add(this.cboQuatNguon);
@@ -184,6 +185,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.BackColor = System.Drawing.Color.PowderBlue;
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Controls.Add(this.cboNutDieuKhien);
             this.groupBox2.Controls.Add(this.btnKtra);
@@ -199,51 +201,27 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lỗi Cụ Thể";
             // 
-            // groupBox3
+            // btnThoat
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox3.Controls.Add(this.lblKetQua);
-            this.groupBox3.Location = new System.Drawing.Point(12, 302);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(760, 146);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThoat.Location = new System.Drawing.Point(313, 193);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(74, 70);
+            this.btnThoat.TabIndex = 6;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // lblLoi
+            // cboNutDieuKhien
             // 
-            this.lblLoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoi.Location = new System.Drawing.Point(6, 34);
-            this.lblLoi.Name = "lblLoi";
-            this.lblLoi.Size = new System.Drawing.Size(381, 83);
-            this.lblLoi.TabIndex = 0;
-            // 
-            // lblLoiCuThe
-            // 
-            this.lblLoiCuThe.Location = new System.Drawing.Point(7, 129);
-            this.lblLoiCuThe.Name = "lblLoiCuThe";
-            this.lblLoiCuThe.Size = new System.Drawing.Size(112, 23);
-            this.lblLoiCuThe.TabIndex = 1;
-            // 
-            // cboLoiNguon
-            // 
-            this.cboLoiNguon.FormattingEnabled = true;
-            this.cboLoiNguon.Location = new System.Drawing.Point(39, 189);
-            this.cboLoiNguon.Name = "cboLoiNguon";
-            this.cboLoiNguon.Size = new System.Drawing.Size(149, 21);
-            this.cboLoiNguon.TabIndex = 2;
-            this.cboLoiNguon.Visible = false;
-            // 
-            // lblLoiNguon
-            // 
-            this.lblLoiNguon.AutoSize = true;
-            this.lblLoiNguon.Location = new System.Drawing.Point(36, 163);
-            this.lblLoiNguon.Name = "lblLoiNguon";
-            this.lblLoiNguon.Size = new System.Drawing.Size(106, 13);
-            this.lblLoiNguon.TabIndex = 3;
-            this.lblLoiNguon.Text = "Kiểm Tra Cáp Nguồn";
+            this.cboNutDieuKhien.FormattingEnabled = true;
+            this.cboNutDieuKhien.Location = new System.Drawing.Point(39, 242);
+            this.cboNutDieuKhien.Name = "cboNutDieuKhien";
+            this.cboNutDieuKhien.Size = new System.Drawing.Size(149, 21);
+            this.cboNutDieuKhien.TabIndex = 5;
+            this.cboNutDieuKhien.Visible = false;
             // 
             // btnKtra
             // 
@@ -267,14 +245,53 @@
             this.lblLoiChiTiet.TabIndex = 3;
             this.lblLoiChiTiet.Text = "Lỗi chi tiết";
             // 
-            // cboNutDieuKhien
+            // lblLoiNguon
             // 
-            this.cboNutDieuKhien.FormattingEnabled = true;
-            this.cboNutDieuKhien.Location = new System.Drawing.Point(39, 242);
-            this.cboNutDieuKhien.Name = "cboNutDieuKhien";
-            this.cboNutDieuKhien.Size = new System.Drawing.Size(149, 21);
-            this.cboNutDieuKhien.TabIndex = 5;
-            this.cboNutDieuKhien.Visible = false;
+            this.lblLoiNguon.AutoSize = true;
+            this.lblLoiNguon.Location = new System.Drawing.Point(36, 163);
+            this.lblLoiNguon.Name = "lblLoiNguon";
+            this.lblLoiNguon.Size = new System.Drawing.Size(106, 13);
+            this.lblLoiNguon.TabIndex = 3;
+            this.lblLoiNguon.Text = "Kiểm Tra Cáp Nguồn";
+            // 
+            // cboLoiNguon
+            // 
+            this.cboLoiNguon.FormattingEnabled = true;
+            this.cboLoiNguon.Location = new System.Drawing.Point(39, 189);
+            this.cboLoiNguon.Name = "cboLoiNguon";
+            this.cboLoiNguon.Size = new System.Drawing.Size(149, 21);
+            this.cboLoiNguon.TabIndex = 2;
+            this.cboLoiNguon.Visible = false;
+            // 
+            // lblLoiCuThe
+            // 
+            this.lblLoiCuThe.Location = new System.Drawing.Point(7, 129);
+            this.lblLoiCuThe.Name = "lblLoiCuThe";
+            this.lblLoiCuThe.Size = new System.Drawing.Size(112, 23);
+            this.lblLoiCuThe.TabIndex = 1;
+            // 
+            // lblLoi
+            // 
+            this.lblLoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoi.Location = new System.Drawing.Point(6, 34);
+            this.lblLoi.Name = "lblLoi";
+            this.lblLoi.Size = new System.Drawing.Size(381, 83);
+            this.lblLoi.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.BackColor = System.Drawing.Color.Silver;
+            this.groupBox3.Controls.Add(this.lblKetQua);
+            this.groupBox3.Location = new System.Drawing.Point(12, 302);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(760, 146);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
             // 
             // lblKetQua
             // 
@@ -324,19 +341,6 @@
             this.label9.Size = new System.Drawing.Size(113, 13);
             this.label9.TabIndex = 5;
             this.label9.Text = "Nguyễn Thành Quang";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThoat.Location = new System.Drawing.Point(313, 193);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(74, 70);
-            this.btnThoat.TabIndex = 6;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // BTLHCG
             // 

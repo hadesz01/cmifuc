@@ -158,6 +158,7 @@ namespace BTLHCGChuanDoanHongHocMayTinh
                 cboLoiNguon.Visible = true;
                 lblLoiNguon.Text = "Kiểm tra cáp nguồn";
                 lblLoiChiTiet.Text = "";
+                cboNutDieuKhien.Visible = false;
             }
             else if (flag==1)
             {
